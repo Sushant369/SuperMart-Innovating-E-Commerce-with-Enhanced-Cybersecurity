@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supermart Home</title>
+    <!-- Update the link to the stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Supermart</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('products') }}">Products</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Update the image sources -->
+        <img src="{{ url_for('static', filename='supermart-banner.png') }}" alt="Walmart Banner" style="width:100%; height:auto;">
+        <center> <h2>Black Friday Deals</h2> </center>
+        <div class="product-gallery">
+            <!-- Example Product Images -->
+            <img src="{{ url_for('static', filename='product-1.png') }}" alt="Product 1" style="width:600px; height:600px;">
+            <img src="{{ url_for('static', filename='product-3.png') }}" alt="Product 2" style="width:700px; height:600px;">
+            <!-- Add more product images here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Supermart</p>
+    </footer>
+
+    <!-- Update the link to the script -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

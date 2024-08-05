@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0071ce; /* Walmart Blue */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #0050a0; /* Darker Walmart Blue */
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.login-form { 
+    background: white; 
+    padding: 20px; 
+    margin-top: 50px; 
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px; /* Added rounded corners */
+}
+
+input[type=text], input[type=password] { 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    width: 200px; 
+    border: 1px solid #ddd;
+}
+
+input[type=submit] { 
+    padding: 10px 20px; 
+    background: #ffc220; /* Walmart Yellow */
+    color: black; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 3px; /* Rounded corners for button */
+}
+
+input[type=submit]:hover { 
+    background: #ffaa00; /* Darker Walmart Yellow */
+}

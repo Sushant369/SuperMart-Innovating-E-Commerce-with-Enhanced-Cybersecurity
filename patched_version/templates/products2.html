@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supermart Products</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Our Products</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input type="text" id="searchBox" placeholder="Search products...">
+      <button onclick="searchProducts()">Search</button>
+    </div>
+
+    <div id="searchResults"></div>
+
+    <div class="filter-options">
+      <button onclick="sortProducts()">Sort by Price</button>
+      </div>
+
+    <div class="product-gallery">
+      <div class="product-item">
+        <img src="images/product1.png" alt="Product 1" style="width:100px; height:auto;">
+        <p>Product Name 1</p>
+        <p>Price: $100 <span class="discount">Discount: 20%</span></p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+        <button onclick="buyNow(this)">Buy Now</button>
+      </div>
+      <div class="product-item">
+        <img src="images/product2.png" alt="Product 2" style="width:100px; height:auto;">
+        <p>Product Name 2</p>
+        <p>Price: $150 <span class="discount">Discount: 15%</span></p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+        <button onclick="buyNow(this)">Buy Now</button>
+      </div>
+      </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Walmart</p>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
